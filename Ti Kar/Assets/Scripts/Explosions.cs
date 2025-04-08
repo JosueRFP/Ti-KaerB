@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Explosions : MonoBehaviour
 {
-    [SerializeField] GameObject explosion;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,5 +13,11 @@ public class Explosions : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnMouseDown()
+    {
+        
+
     }
 }
