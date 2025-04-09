@@ -2037,6 +2037,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bomb: {fileID: 3395165580346706202, guid: 8536139baffb7b24b9faca7373886704, type: 3}
+  bombTransform: {fileID: 1396954483}
+  bombTimeRate: 4
 --- !u!4 &1396954483
 Transform:
   m_ObjectHideFlags: 0

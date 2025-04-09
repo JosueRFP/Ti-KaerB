@@ -3,11 +3,20 @@ using UnityEngine;
 public class Explosions : MonoBehaviour
 {
     [SerializeField] GameObject bomb;
+    [SerializeField] Transform bombTransform;
+    [SerializeField] float bombTimeRate;
 
+    private float nextToDrop;
 
-    private void Update()
+    void Update()
     {
-        OnMouseDown();
+        
+        if(Time.deltaTime >= nextToDrop)
+        {
+            OnMouseDown();
+            nextToDrop = Time.deltaTime + bombTimeRate;
+
+        }
     }
     private void OnMouseDown()
     {
