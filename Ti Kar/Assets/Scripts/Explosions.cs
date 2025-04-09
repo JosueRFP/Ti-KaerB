@@ -7,7 +7,7 @@ public class Explosions : MonoBehaviour
 
     private void Update()
     {
-        
+        OnMouseDown();
     }
     private void OnMouseDown()
     {
