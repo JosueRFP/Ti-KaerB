@@ -2,22 +2,22 @@ using UnityEngine;
 
 public class Explosions : MonoBehaviour
 {
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] GameObject bomb;
+
+
+    private void Update()
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnMouseDown()
     {
+        if (Input.GetMouseButtonDown(0)) 
+        {
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Instantiate(bomb, mousePosition, Quaternion.identity);
+        }
         
-
     }
+     
+    
 }
