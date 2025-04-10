@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SendBox : MonoBehaviour
+public class SendBoxController : MonoBehaviour
 {
     [SerializeField] GameObject box;
     public Transform boxPosition;
