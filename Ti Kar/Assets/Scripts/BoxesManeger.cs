@@ -21,7 +21,7 @@ public class BoxesManeger : MonoBehaviour
 
     private void Update()
     {
-        // checkCollider = Physics.OverlapBox(check.position, check.localScale, );
+         
     }
 
 
