@@ -9,8 +9,6 @@ public class BoxesManeger : MonoBehaviour
     [SerializeField] Collider checkCollider;
     [SerializeField] Transform check;
     [SerializeField] bool oneBox;
-
-    [SerializeField] LayerMask layerMask;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void  Start()

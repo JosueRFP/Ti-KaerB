@@ -3,9 +3,9 @@ using UnityEngine;
 public class SendBoxController : MonoBehaviour
 {
     [SerializeField] GameObject box;
-    public Transform boxPosition;
+    [SerializeField] Transform boxPosition;
     
-    private float nextToDrop;
+    float nextToDrop;
 
     void Update()
     {          
