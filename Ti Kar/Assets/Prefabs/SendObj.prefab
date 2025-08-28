@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9141208085787898448}
   - component: {fileID: 8639498449423464864}
   m_Layer: 0
-  m_Name: Box
+  m_Name: SendObj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
