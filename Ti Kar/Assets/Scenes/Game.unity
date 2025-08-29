@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: c8e304140c860744783e1aa250535791, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 648798993}
   - component: {fileID: 648798992}
   m_Layer: 0
-  m_Name: AudioSource
+  m_Name: ProplerAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -362,7 +362,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.813
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -549,13 +549,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: -0.6508226, y: 0.25652167, z: -0.03441158, w: -0.71375245}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 71.21, y: -86.217, z: -422.146}
 --- !u!1 &881836234
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,14 +782,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.17992868, y: -0.6753326, z: 0.17423421, w: 0.69368154}
-  m_LocalPosition: {x: 14.50307, y: 5.4314685, z: 1.8621464}
+  m_LocalRotation: {x: 0.05268361, y: -0.6958131, z: 0.050277103, w: 0.71452135}
+  m_LocalPosition: {x: 20.3, y: 1.3, z: 1.7}
   m_LocalScale: {x: 0.5542316, y: 0.5542315, z: 0.5542316}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1849364433}
   m_Father: {fileID: 592700397}
-  m_LocalEulerAnglesHint: {x: 29.01, y: -180, z: -0.085}
+  m_LocalEulerAnglesHint: {x: 8.352, y: -88.486, z: -0.085}
 --- !u!1001 &1169953298
 PrefabInstance:
   m_ObjectHideFlags: 0
