@@ -4,7 +4,8 @@ using UnityEngine;
 public class BoxCheck : MonoBehaviour
 {
     [SerializeField] public int allMails;
-    [SerializeField] TextMeshPro mailsTxt;
+    [SerializeField] GameObject winPainel;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,6 +15,15 @@ public class BoxCheck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (allMails == 9)
+        {
+            winPainel.SetActive(true);
+            Time.captureDeltaTime = 0;
+        }
+
+       else 
+       {
+           
+       }
     }
 }
