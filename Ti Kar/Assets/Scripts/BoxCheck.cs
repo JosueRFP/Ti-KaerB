@@ -23,7 +23,7 @@ public class BoxCheck : MonoBehaviour
 
        else 
        {
-           
+            winPainel.SetActive(false);
        }
     }
 }
