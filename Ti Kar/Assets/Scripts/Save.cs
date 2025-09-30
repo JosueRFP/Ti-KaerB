@@ -1,20 +1,17 @@
 using System.IO;
 using UnityEngine;
 
-public enum Tools
-{
-    None, Water, Shield
-}
+
 [System.Serializable]
 public class PlayerTollsSystem
 {
     [SerializeField] float toolColldown;
-    [SerializeField] Tools toolInHand;
+    
 
     public PlayerTollsSystem(float toolCooldown)
     {
         this.toolColldown = toolCooldown;
-        this.toolInHand = Tools.None;
+        
     }
 }
 
