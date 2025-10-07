@@ -5,18 +5,16 @@ using UnityEngine.UIElements;
 public class AdController : MonoBehaviour
 {
     [SerializeField] private Button adBTN;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] GameObject[] ads;
+
+    private void Start()
     {
-        
+        adBTN = GetComponent<Button>();
+        adBTN.clicked += ShowAd;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    
-    
+     public  void ShowAd()
+     {
+         ads[Random.Range(0, ads.Length)].SetActive(true);  
+     }
 }
