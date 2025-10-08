@@ -4,7 +4,7 @@ using UnityEngine.UIElements;
 
 public class AdController : MonoBehaviour
 {
-    [SerializeField] private Button adBTN;
+   [SerializeField] Button adBTN;
     [SerializeField] GameObject[] ads;
 
     private void Start()
@@ -15,6 +15,6 @@ public class AdController : MonoBehaviour
 
      public  void ShowAd()
      {
-         ads[Random.Range(0, ads.Length)].SetActive(true);  
-     }
+         ads[Random.Range(0, ads.Length)].SetActive(true);
+    }
 }
