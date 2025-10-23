@@ -1,10 +1,11 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class AdController : MonoBehaviour
 {
-   [SerializeField] Button adBTN;
+    [SerializeField] Button adBTN;
     [SerializeField] GameObject[] ads;
 
     private void Start()

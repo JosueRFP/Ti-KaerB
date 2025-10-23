@@ -26,4 +26,13 @@ public class BoxCheck : MonoBehaviour
             winPainel.SetActive(false);
        }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Box"))
+        {
+            allMails++;
+            Destroy(collision.gameObject);
+        }
+    }
 }
