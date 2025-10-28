@@ -4,8 +4,14 @@ public class SendBoxController : MonoBehaviour
 {
     [SerializeField] GameObject box;
     [SerializeField] Transform boxPosition;
-    
+
     float nextToDrop;
+    [SerializeField] ErrorTXT errorTXT;
+
+    private void Start()
+    {
+        
+    }
 
     void Update()
     {          
@@ -21,5 +27,7 @@ public class SendBoxController : MonoBehaviour
         
     }
      
+
+
     
 }

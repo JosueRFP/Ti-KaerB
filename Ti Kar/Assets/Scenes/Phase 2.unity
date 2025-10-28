@@ -2163,7 +2163,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 'Erros: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2686,6 +2686,53 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!1 &1768745247
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1768745249}
+  - component: {fileID: 1768745248}
+  m_Layer: 0
+  m_Name: Erro Maneger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1768745248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768745247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b1e294fa5833940974d4206bd441cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ErrorTXT
+  erroTxt: {fileID: 1221875996}
+  gameOverPainel: {fileID: 1571743161}
+  startErrors: 0
+--- !u!4 &1768745249
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768745247}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 414.2283, y: 160.96935, z: 283.89545}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1935493919
 GameObject:
   m_ObjectHideFlags: 0
@@ -2798,6 +2845,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   box: {fileID: 3395165580346706202, guid: 8536139baffb7b24b9faca7373886704, type: 3}
   boxPosition: {fileID: 0}
+  errorTXT: {fileID: 0}
 --- !u!1 &2119075899
 GameObject:
   m_ObjectHideFlags: 0
@@ -2942,3 +2990,4 @@ SceneRoots:
   - {fileID: 19648056}
   - {fileID: 1289170871}
   - {fileID: 2119075901}
+  - {fileID: 1768745249}

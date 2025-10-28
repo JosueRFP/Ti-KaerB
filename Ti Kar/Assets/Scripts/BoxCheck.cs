@@ -15,7 +15,7 @@ public class BoxCheck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (allMails == 1)
+        if (allMails == 5)
         {
             winPainel.SetActive(true);
             Time.captureDeltaTime = 0;
