@@ -5,7 +5,7 @@ using UnityEngine.UIElements;
 
 public class AdController : MonoBehaviour
 {
-    [SerializeField] Button adBTN;
+    Button adBTN;
     [SerializeField] GameObject[] ads;
 
     private void Start()
