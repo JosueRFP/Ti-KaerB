@@ -6,7 +6,7 @@ public class SendBoxController : MonoBehaviour
     [SerializeField] Transform boxPosition;
 
     float nextToDrop;
-    [SerializeField] ErrorTXT errorTXT;
+    
 
     private void Start()
     {

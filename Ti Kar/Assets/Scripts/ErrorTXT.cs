@@ -6,7 +6,7 @@ public class ErrorTXT : MonoBehaviour
     [SerializeField] TextMeshProUGUI erroTxt;
 
     [SerializeField] GameObject gameOverPainel;
-    [SerializeField] float startErrors;
+    [SerializeField] public float startErrors;
     float maxErorQTD = 5f;
    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
