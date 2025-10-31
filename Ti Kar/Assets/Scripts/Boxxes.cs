@@ -20,9 +20,9 @@ public class Boxxes : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (collision.gameObject.CompareTag("Box"))
+        if (collision.gameObject.CompareTag("Deliverd"))
         {
-            sendBoxTxt.startBoxs++;
+            sendBoxTxt.UpdateBoxCount();
             Destroy(gameObject);
         }
     }
