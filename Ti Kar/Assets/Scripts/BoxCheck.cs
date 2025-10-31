@@ -6,7 +6,7 @@ public class BoxCheck : MonoBehaviour
     [SerializeField] public int allMails;
     [SerializeField] GameObject winPainel;
 
-    [SerializeField] ErrorTXT errorTXT;
+   
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

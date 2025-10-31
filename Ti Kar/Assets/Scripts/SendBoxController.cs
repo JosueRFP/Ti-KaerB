@@ -1,12 +1,14 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SendBoxController : MonoBehaviour
 {
     [SerializeField] GameObject box;
     [SerializeField] Transform boxPosition;
 
-    float nextToDrop;
-    
+    float dropRate;
+    [SerializeField] UnityEvent OnDropBox;
+     
 
     private void Start()
     {
@@ -23,6 +25,7 @@ public class SendBoxController : MonoBehaviour
         {
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Instantiate(box, mousePosition, Quaternion.identity);
+            OnDropBox.Invoke();
         }
         
     }

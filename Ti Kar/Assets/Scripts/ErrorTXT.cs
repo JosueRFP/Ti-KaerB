@@ -1,18 +1,21 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class ErrorTXT : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI erroTxt;
+    [SerializeField] UnityEvent OnLose;
+    [SerializeField] UnityEvent OnPropler;
 
-    [SerializeField] GameObject gameOverPainel;
     [SerializeField] public float startErrors;
-    float maxErorQTD = 5f;
+    float maxErorQTD;
    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        maxErorQTD = 5f;
     }
 
     // Update is called once per frame
@@ -28,7 +31,14 @@ public class ErrorTXT : MonoBehaviour
         if(startErrors == maxErorQTD)
         {
             Time.timeScale = 0f;
-            gameOverPainel.SetActive(true);
+            OnLose.Invoke();
+            OnPropler.Invoke();
         }   
    }
+
+
+    public void Teleport(string sceneRepeat)
+    {
+        SceneManager.LoadScene(sceneRepeat);
+    }
 }

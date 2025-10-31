@@ -227,6 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoxCheck
   allMails: 0
   winPainel: {fileID: 832401628}
+  errorTXT: {fileID: 0}
 --- !u!65 &141837926
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -295,6 +296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoxCheck
   allMails: 0
   winPainel: {fileID: 832401628}
+  errorTXT: {fileID: 0}
 --- !u!65 &204160789
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -553,6 +555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoxCheck
   allMails: 0
   winPainel: {fileID: 832401628}
+  errorTXT: {fileID: 0}
 --- !u!65 &297728277
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -667,7 +670,7 @@ GameObject:
   - component: {fileID: 549413214}
   m_Layer: 0
   m_Name: Street
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1834,6 +1837,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoxCheck
   allMails: 0
   winPainel: {fileID: 832401628}
+  errorTXT: {fileID: 0}
 --- !u!65 &1097766246
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2087,6 +2091,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allMails: 0
   winPainel: {fileID: 832401628}
+  errorTXT: {fileID: 0}
 --- !u!4 &1183080621
 Transform:
   m_ObjectHideFlags: 0
@@ -2845,7 +2850,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   box: {fileID: 3395165580346706202, guid: 8536139baffb7b24b9faca7373886704, type: 3}
   boxPosition: {fileID: 0}
-  errorTXT: {fileID: 0}
 --- !u!1 &2119075899
 GameObject:
   m_ObjectHideFlags: 0
