@@ -30,7 +30,7 @@ public class ErrorTXT : MonoBehaviour
    {
         if(startErrors == maxErorQTD)
         {
-            Time.timeScale = 0f;
+            Time.timeScale = 1f;
             OnLose.Invoke();
             OnPropler.Invoke();
         }   
