@@ -3,21 +3,20 @@ using UnityEngine.AI;
 
 public class MoveCamera : MonoBehaviour
 {
-    NavMeshAgent agent;
-
-    [SerializeField] Transform[] flyPoints; 
+    [SerializeField] Transform flyPoints;
+    [SerializeField] float speed = 5f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(agent. remainingDistance <= agent.stoppingDistance)
+        if(flyPoints != null)
         {
-            agent.SetDestination(flyPoints[Random.Range(0, flyPoints.Length)].position);
+            transform.position = Vector3.MoveTowards(transform.position, flyPoints.position, speed * Time.deltaTime);
         }
     }
 }
