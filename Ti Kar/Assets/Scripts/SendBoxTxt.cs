@@ -19,7 +19,7 @@ public class SendBoxTxt : MonoBehaviour
 
 
    public void UpdateBoxCount()
-    {
+   {
         startBoxs++;
-    }
+   }
 }

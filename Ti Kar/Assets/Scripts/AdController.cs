@@ -17,5 +17,14 @@ public class AdController : MonoBehaviour
      public  void ShowAd()
      {
         ads[Random.Range(0, ads.Length)].SetActive(true);
+     }
+
+    public void CloseAd()
+    {
+        adBTN.SetEnabled(true);
+        foreach (GameObject ad in ads)
+        {
+            ad.SetActive(false);
+        }
     }
 }

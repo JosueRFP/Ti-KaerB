@@ -1,10 +1,9 @@
 using UnityEngine;
-using UnityEngine.AI;
 
 public class MoveCamera : MonoBehaviour
 {
     [SerializeField] Transform flyPoints;
-    [SerializeField] float speed = 5f;
+    [SerializeField] float speed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
