@@ -1,15 +1,16 @@
-using System.Collections;
-using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UIElements;
 
 public class AdController : MonoBehaviour
 {
     Button adBTN;
+    Button closeADBTN;
     [SerializeField] GameObject[] ads;
+
     private void Start()
     {
-
+        closeADBTN = GetComponent<Button>();
         adBTN = GetComponent<Button>();
         adBTN.clicked += ShowAd;
     }
@@ -19,12 +20,4 @@ public class AdController : MonoBehaviour
         ads[Random.Range(0, ads.Length)].SetActive(true);
      }
 
-    public void CloseAd()
-    {
-        adBTN.SetEnabled(true);
-        foreach (GameObject ad in ads)
-        {
-            ad.SetActive(false);
-        }
-    }
 }
