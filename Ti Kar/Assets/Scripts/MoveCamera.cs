@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MoveCamera : MonoBehaviour
 {
     [SerializeField] Transform flyPoints;
     [SerializeField] float speed;
+    [SerializeField] UnityEvent OnFinish;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,6 +18,14 @@ public class MoveCamera : MonoBehaviour
         if(flyPoints != null)
         {
             transform.position = Vector3.MoveTowards(transform.position, flyPoints.position, speed * Time.deltaTime);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Final"))
+        {
+            OnFinish.Invoke();
         }
     }
 }
