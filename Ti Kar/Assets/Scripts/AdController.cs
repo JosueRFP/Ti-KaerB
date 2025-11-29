@@ -10,7 +10,6 @@ public class AdController : MonoBehaviour
 
     private void Start()
     {
-        closeADBTN = GetComponent<Button>();
         adBTN = GetComponent<Button>();
         adBTN.clicked += ShowAd;
     }
