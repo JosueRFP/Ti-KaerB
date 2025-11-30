@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CollisionEfect : MonoBehaviour
 {
     [SerializeField] GameObject efect;
+    [SerializeField] UnityEvent OnDrop;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,6 +22,7 @@ public class CollisionEfect : MonoBehaviour
         if (collision.gameObject.CompareTag("Box"))
         {
             efect.SetActive(true);
+            OnDrop.Invoke();
         }
     }
 
