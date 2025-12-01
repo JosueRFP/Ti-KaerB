@@ -5,7 +5,7 @@ public class MoveCamera : MonoBehaviour
 {
     [SerializeField] Transform flyPoints;
     [SerializeField] float speed;
-    [SerializeField] UnityEvent OnFinish;
+    [SerializeField] GameObject finishPhasePainel;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,11 +21,12 @@ public class MoveCamera : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Final"))
+        if (other.gameObject.CompareTag("Finish"))
         {
-            OnFinish.Invoke();
+            finishPhasePainel.SetActive(true);
+            print("Colidiu");
         }
     }
 }
